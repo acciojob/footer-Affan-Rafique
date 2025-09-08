@@ -24,7 +24,7 @@
   letter-spacing: 1px;
 }
 .media-icons {
-  display: flex;
+  display: flex; /* Ensure this is flex */
   gap: 16px;
 }
 .media-icons .icon {
@@ -48,11 +48,11 @@
 .media-icons .icon:hover {
   opacity: 0.8;
 }
-.footer-links {
-  display: flex;
-  flex: 3 1 500px;
+.link-boxes {
+  display: flex; /* New wrapper as required by test */
   justify-content: space-between;
   flex-wrap: wrap;
+  flex: 3 1 500px;
   gap: 40px;
 }
 .footer-section {
@@ -106,7 +106,7 @@
     flex-direction: column;
     gap: 32px;
   }
-  .footer-links {
+  .link-boxes {
     flex-direction: column;
     gap: 0;
   }
